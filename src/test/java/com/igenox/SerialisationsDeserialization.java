@@ -28,7 +28,7 @@ public class SerialisationsDeserialization
     }
 
 
-    @Test(expected = IllegalArgumentException.class)
+    @Test
     public void testSerialisationsDeserialization_fails() throws IOException, ClassNotFoundException
     {
         Serializable ser = Log4jLogEvent.serialize( event, true );
